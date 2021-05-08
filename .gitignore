@@ -1,0 +1,14 @@
+*.jar
+banned-ips.json
+banned-players.json
+cache/
+creative/
+world/
+world_nether/
+world_the_end
+usercache.json
+wepif.yml
+whitelist.json
+logs/
+*.db
+*.sqlite

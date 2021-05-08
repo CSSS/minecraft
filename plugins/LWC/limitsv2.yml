@@ -1,0 +1,23 @@
+defaults:
+    default: 420
+    chest: unlimited
+    furnace: 69
+master:
+    limit: unlimited
+    type: custom
+    chest: unlimited
+    furnace: unlimited
+    dispenser: unlimited
+    wooden_door: unlimited
+    iron_door: unlimited
+groups:
+    SampleGroup:
+        default: unlimited
+        chest: 5
+    SampleGroup2:
+        default: 5
+players:
+    Notch:
+        default: unlimited
+limits:
+    showEmpty: true

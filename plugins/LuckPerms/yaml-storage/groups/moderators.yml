@@ -1,0 +1,22 @@
+name: moderators
+permissions:
+- simpleclans.admin.*
+- simpleclans.mod.*
+- bagofgold.banksign.create
+- betterssentials.invsee
+- core.chat.admin
+- core.cmd.inv.others
+- core.cmd.powetool
+- core.cmd.sudo
+- core.cmd.summon
+- dynmap.playermarkers.showall
+- essentials.invsee
+- essentials.mute.exempt
+- lwc.admin.find
+- lwc.admin.remove
+- lwc.admin.view
+- lwc.create.door
+- lwc.shownotices
+- oreannouncer.admin.alerts.see
+- oreannouncer.admin.stats.other
+- oreannouncer.admin.warnings

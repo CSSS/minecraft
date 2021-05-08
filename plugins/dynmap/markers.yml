@@ -1,0 +1,40 @@
+%YAML 1.1
+---
+icons: {
+    }
+sets:
+    chunkmaster:
+        hide: false
+        circles: {
+            }
+        deficon: default
+        areas: {
+            }
+        label: Chunkmaster
+        markers: {
+            }
+        lines: {
+            }
+        layerprio: 0
+    markers:
+        hide: false
+        circles: {
+            }
+        deficon: default
+        areas: {
+            }
+        label: Markers
+        markers:
+            marker_1:
+                world: world
+                markup: false
+                x: -882.0
+                icon: portal
+                y: 76.0
+                z: 1567.0
+                label: Portal to The End
+        lines: {
+            }
+        layerprio: 0
+playersets: {
+    }

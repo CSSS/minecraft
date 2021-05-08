@@ -1,0 +1,190 @@
+core:
+    locale: en
+    flushInterval: 10
+    cacheSize: 10000
+    precache: -1
+    showNotices: true
+    showMyNotices: false
+    opIsLWCAdmin: true
+    disableHistory: false
+    factionCheck: false
+    groupPrefix: group.
+    updateNotifier: true
+optional:
+    onlyProtectWhenOwnerIsOnline: false
+    onlyProtectWhenOwnerIsOffline: false
+    exemptBlocks: []
+    optOut: false
+    blacklistedBlocks:
+    - '166'
+    - hopper
+    blacklistedPlayers:
+    - player
+    useProtectionLimits: true
+    useActionBar: false
+    alternativeHopperProtection: false
+    useFormattedInfo: true
+database:
+    adapter: sqlite
+    path: plugins/LWC/lwc.db
+    host: localhost
+    database: lwc
+    username: ''
+    password: ''
+    prefix: lwc_
+    ping_interval: 300
+protections:
+    denyRedstone: false
+    denyHoppers: true
+    autoRegister: false
+    ignoreBlockDestruction: false
+    ignoreLeftClick: false
+    ignoreRightClick: false
+    ignoreExplosions: false
+    allowEntityBreakDoor: false
+    allowEntityInteract: true
+    quiet: false
+    readonly-modify: false
+    readonly-remove: false
+    blocks:
+        note_block:
+            enabled: true
+            autoRegister: true
+            ignoreLeftClick: true
+        anvil:
+            enabled: true
+        chest:
+            enabled: true
+            autoRegister: private
+        trapped_chest:
+            enabled: true
+        furnace:
+            enabled: false
+        dispenser:
+            enabled: true
+        dropper:
+            enabled: true
+        barrel:
+            enabled: true
+        blast_furnace:
+            enabled: true
+        cartography_table:
+            enabled: false
+        composter:
+            enabled: true
+        grindstone:
+            enabled: true
+        lectern:
+            enabled: true
+        loom:
+            enabled: false
+        smoker:
+            enabled: true
+        stonecutter:
+            enabled: true
+        shulker_box:
+            enabled: true
+        white_shulker_box:
+            enabled: true
+        orange_shulker_box:
+            enabled: true
+        magenta_shulker_box:
+            enabled: true
+        light_blue_shulker_box:
+            enabled: true
+        yellow_shulker_box:
+            enabled: true
+        lime_shulker_box:
+            enabled: true
+        pink_shulker_box:
+            enabled: true
+        gray_shulker_box:
+            enabled: true
+        light_gray_shulker_box:
+            enabled: true
+        cyan_shulker_box:
+            enabled: true
+        purple_shulker_box:
+            enabled: true
+        blue_shulker_box:
+            enabled: true
+        brown_shulker_box:
+            enabled: true
+        green_shulker_box:
+            enabled: true
+        red_shulker_box:
+            enabled: true
+        black_shulker_box:
+            enabled: true
+        sign:
+            enabled: false
+        white_banner:
+            enabled: true
+        orange_banner:
+            enabled: true
+        magenta_banner:
+            enabled: true
+        light_blue_banner:
+            enabled: true
+        yellow_banner:
+            enabled: true
+        lime_banner:
+            enabled: true
+        pink_banner:
+            enabled: true
+        gray_banner:
+            enabled: true
+        light_gray_banner:
+            enabled: true
+        cyan_banner:
+            enabled: true
+        purple_banner:
+            enabled: true
+        blue_banner:
+            enabled: true
+        brown_banner:
+            enabled: true
+        green_banner:
+            enabled: true
+        red_banner:
+            enabled: true
+        black_banner:
+            enabled: true
+        white_wall_banner:
+            enabled: true
+        orange_wall_banner:
+            enabled: true
+        magenta_wall_banner:
+            enabled: true
+        light_blue_wall_banner:
+            enabled: true
+        yellow_wall_banner:
+            enabled: true
+        lime_wall_banner:
+            enabled: true
+        pink_wall_banner:
+            enabled: true
+        gray_wall_banner:
+            enabled: true
+        light_gray_wall_banner:
+            enabled: true
+        cyan_wall_banner:
+            enabled: true
+        purple_wall_banner:
+            enabled: true
+        blue_wall_banner:
+            enabled: true
+        brown_wall_banner:
+            enabled: true
+        green_wall_banner:
+            enabled: true
+        red_wall_banner:
+            enabled: true
+        black_wall_banner:
+            enabled: true
+modes:
+    droptransfer:
+        enabled: true
+        crossWorld: false
+    persist:
+        enabled: true
