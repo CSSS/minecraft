@@ -31,7 +31,7 @@ barStyle:
 shareCoolDown: true
 callFiremenInNether: false
 freezeWhileRTP: false
-moveCancelRTP: true
+moveCancelRTP: false
 Sound: ENTITY_ENDERMAN_TELEPORT
 BlockedBiomes:
 - COLD_OCEAN
@@ -56,7 +56,6 @@ BlockedBlocks:
 - CAVE_AIR
 Portals:
   Gamemodes:
-  - ADVENTURE
   - SURVIVAL
   freezeWhileRTP: false
   moveCancelRTP: true
@@ -99,8 +98,8 @@ Effects:
   - INVISIBILITY
   - SLOW:2
   SIGN: []
-MinXY: -32
-MaxXY: 32
+MinXY: -15000
+MaxXY: 15000
 movingBorder: false
 Wait: 0
 Retries: 6
@@ -119,7 +118,7 @@ useRandomWorlds: false
 randomWorlds:
   world: 1337
   world_nether: 42
-useGlobalClaimCheck: true
+useGlobalClaimCheck: false
 useAlternativeGlobalClaimCheck: false
 signTexts:
   createWith: '[wildtp]'

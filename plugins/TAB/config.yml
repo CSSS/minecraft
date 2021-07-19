@@ -46,18 +46,12 @@ Groups:
     tabprefix: '&0&l[&7&lPlayer&0&l] &3'
     tagprefix: '&2&lPlayer &3'
   _OTHER_:
-    tabprefix: '%parties_color_name%&c '
     tagprefix: '%vault-prefix% '
     tabsuffix: '%afk%'
     tagsuffix: '%afk%'
     customtabname: '%essentialsnick%'
     customtagname: '%essentialsnick%'
 Users:
-  _NEZNAMY_:
-    tabprefix: '&6&lTAB Author &a'
-    tagprefix: '&6&lTAB &r&a'
-    abovename: '&bOh look, 3 lines of text !'
-    belowname: '&eThere''s only one plugin out there supporting it'
 enable-collision: true
 do-not-move-spectators: false
 unlimited-nametag-prefix-suffix-mode:

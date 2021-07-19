@@ -4,34 +4,79 @@ worlds:
 -   name: world
     title: world
     enabled: true
-    extrazoomout: 5
+    extrazoomout: 4
     maps:
     -   class: org.dynmap.hdmap.HDMap
         name: flat
-        title: Flat
+        title: Overview
         prefix: flat
-        perspective: iso_S_90_vlowres
+        perspective: iso_S_90_hires
         shader: stdtexture
         lighting: shadows
+        mapzoomin: 8
         image-format: png
-        mapzoomin: 5
-        mapzoomout: 3
-        boostzoom: 0
-        append_to_world: ''
-        protected: false
+    -   class: org.dynmap.hdmap.HDMap
+        name: surface4
+        title: Surface North West
+        prefix: tNW
+        perspective: iso_NW_30_hires
+        lighting: shadows
+        mapzoomin: 8
+        boostzoom: 4
+        image-format: jpg-q100
+        samplesPerPixel: 20
+        denoiser:
+            enabled: true
+            albedoSamplesPerPixel: 4
+            normalSamplesPerPixel: 4
+    -   class: org.dynmap.hdmap.HDMap
+        name: surface3
+        title: Surface South West
+        prefix: tSW
+        perspective: iso_SW_30_hires
+        shader: stdtexture
+        lighting: shadows
+        mapzoomin: 8
+        boostzoom: 4
+        image-format: jpg-q100
+        chunkyThreads: 1
+        samplesPerPixel: 20
+        denoiser:
+            enabled: true
+            albedoSamplesPerPixel: 4
+            normalSamplesPerPixel: 4
+    -   class: org.dynmap.hdmap.HDMap
+        name: surface2
+        title: Surface North East
+        prefix: tNE
+        perspective: iso_NE_30_hires
+        shader: stdtexture
+        lighting: shadows
+        mapzoomin: 8
+        boostzoom: 4
+        image-format: jpg-q100
+        chunkyThreads: 1
+        samplesPerPixel: 20
+        denoiser:
+            enabled: true
+            albedoSamplesPerPixel: 4
+            normalSamplesPerPixel: 4
     -   class: org.dynmap.hdmap.HDMap
         name: surface
-        title: Surface
+        title: Surface South East
         prefix: t
         perspective: iso_SE_30_hires
         shader: stdtexture
         lighting: shadows
-        image-format: jpg-q75
-        mapzoomin: 3
-        mapzoomout: 5
-        boostzoom: 2
-        append_to_world: ''
-        protected: false
+        mapzoomin: 8
+        boostzoom: 4
+        image-format: jpg-q100
+        chunkyThreads: 1
+        samplesPerPixel: 20
+        denoiser:
+            enabled: true
+            albedoSamplesPerPixel: 4
+            normalSamplesPerPixel: 4
     protected: false
     showborder: true
     sendposition: true
@@ -44,40 +89,105 @@ worlds:
 -   name: world_nether
     title: world_nether
     enabled: true
-    extrazoomout: 2
+    extrazoomout: 4
     maps:
     -   class: org.dynmap.hdmap.HDMap
         name: flat
-        title: Flat
+        title: Underview
         prefix: flat
-        perspective: iso_S_90_lowres
+        perspective: iso_S_90_hires
         shader: stdtexture
         lighting: nethershadows
         background: '#300806'
-        mapzoomin: 5
+        mapzoomin: 8
+        image-format: png
     -   class: org.dynmap.hdmap.HDMap
         name: nether
-        title: Surface
+        title: Surface South East
         prefix: nt
         perspective: iso_SE_30_hires
         shader: stdtexture
         lighting: nethershadows
         background: '#300806'
-        mapzoomin: 3
-        boostzoom: 2
+        mapzoomin: 8
+        boostzoom: 4
+        image-format: jpg-q100
+    -   class: org.dynmap.hdmap.HDMap
+        name: nether
+        title: Surface North-West
+        prefix: ntNW
+        perspective: iso_NW_30_hires
+        shader: stdtexture
+        lighting: nethershadows
+        background: '#300806'
+        mapzoomin: 8
+        boostzoom: 4
+        image-format: jpg-q100
+    -   class: org.dynmap.hdmap.HDMap
+        name: nether
+        title: Surface South West
+        prefix: ntSW
+        perspective: iso_SW_30_hires
+        shader: stdtexture
+        lighting: nethershadows
+        background: '#300806'
+        mapzoomin: 8
+        boostzoom: 4
+        image-format: jpg-q100
+    -   class: org.dynmap.hdmap.HDMap
+        name: nether
+        title: Surface North East
+        prefix: ntNE
+        perspective: iso_NE_30_hires
+        shader: stdtexture
+        lighting: nethershadows
+        background: '#300806'
+        mapzoomin: 8
+        boostzoom: 4
+        image-format: jpg-q100
+    -   class: org.dynmap.hdmap.HDMap
+        name: netherroof
+        title: Roof
+        prefix: ntroof
+        perspective: nether_roof
+        shader: stdtexture
+        lighting: default
+        background: '#300806'
+        mapzoomin: 8
+        boostzoom: 4
+        image-format: jpg-q100
+    protected: false
+    showborder: true
+    sendposition: true
+    sendhealth: true
+    visibilitylimits: [
+        ]
+    hiddenlimits: [
+        ]
+    hidestyle: stone
 -   name: world_the_end
     title: world_the_end
     enabled: true
-    extrazoomout: 2
+    protected: false
+    showborder: true
+    sendposition: true
+    sendhealth: true
+    extrazoomout: 4
+    visibilitylimits: [
+        ]
+    hiddenlimits: [
+        ]
+    hidestyle: stone
     maps:
     -   class: org.dynmap.hdmap.HDMap
         name: flat
-        title: Flat
+        title: Enderview
         prefix: flat
-        perspective: iso_S_90_lowres
+        perspective: iso_S_90_hires
         shader: stdtexture
         lighting: brightnight
-        mapzoomin: 5
+        mapzoomin: 8
+        image-format: png
     -   class: org.dynmap.hdmap.HDMap
         name: the_end
         title: Surface
@@ -85,21 +195,13 @@ worlds:
         perspective: iso_SE_30_hires
         shader: stdtexture
         lighting: brightnight
-        mapzoomin: 3
-        boostzoom: 2
+        mapzoomin: 8
+        boostzoom: 4
+        image-format: jpg-q100
 -   name: creative
     title: creative
     enabled: true
-    protected: false
-    showborder: true
-    sendposition: true
-    sendhealth: true
     extrazoomout: 2
-    visibilitylimits: [
-        ]
-    hiddenlimits: [
-        ]
-    hidestyle: stone
     maps:
     -   class: org.dynmap.hdmap.HDMap
         name: flat
@@ -127,3 +229,12 @@ worlds:
         boostzoom: 2
         append_to_world: ''
         protected: false
+    protected: false
+    showborder: true
+    sendposition: true
+    sendhealth: true
+    visibilitylimits: [
+        ]
+    hiddenlimits: [
+        ]
+    hidestyle: stone

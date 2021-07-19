@@ -32,7 +32,7 @@ lastloginapi:
   # This plugin will only get data from the database without write into it
   # Be sure to use a remote database synchronized with BungeeCord version
   bungeecord:
-    enable: false
+    enable: true
 
   authme:
     # Update timestamps only on successful login

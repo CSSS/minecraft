@@ -1,1 +1,186 @@
-/home/ubuntu/templates/dpsi.txt
+version: 0.20
+#
+# Default template for "Normal" environment worlds (deftemplatesuffix="hi_boost_xhi")
+#  Uses the HDMap renderer with view from the SE with the "hires" resolution (16 pixels per block edge), with resolution boosted
+#  tiles rendered at 'xhires' resolution (64 pixels perblock edge)
+#
+#   This file MAY need to be replaced during an upgrade - rename file to 'custom-normal-hi_boost_xhi.txt' if you wish to customize it
+#
+templates:
+  # Template for normal world (HDMap hires with vhires boost)
+  normal-dpsi:
+    enabled: true
+    # Number of extra zoom-out levels for world (each level is twice as big as the previous one)
+    extrazoomout: 4
+    maps:
+      - class: org.dynmap.hdmap.HDMap
+        name: flat
+        title: "Overview"
+        prefix: flat
+        perspective: iso_S_90_hires
+        shader: stdtexture
+        lighting: shadows
+        mapzoomin: 8
+        image-format: png
+      - class: org.dynmap.hdmap.HDMap
+        name: surface4
+        title: "Surface North West"
+        prefix: tNW
+        perspective: iso_NW_30_hires
+        lighting: shadows
+        mapzoomin: 8
+        boostzoom: 4
+        image-format: jpg-q100
+        samplesPerPixel: 20
+        denoiser:
+          enabled: true
+          albedoSamplesPerPixel: 4
+          normalSamplesPerPixel: 4
+      - class: org.dynmap.hdmap.HDMap
+        name: surface3
+        title: "Surface South West"
+        prefix: tSW
+        perspective: iso_SW_30_hires
+        shader: stdtexture
+        lighting: shadows
+        mapzoomin: 8
+        boostzoom: 4
+        image-format: jpg-q100
+        chunkyThreads: 1
+        samplesPerPixel: 20
+        denoiser:
+          enabled: true
+          albedoSamplesPerPixel: 4
+          normalSamplesPerPixel: 4
+      - class: org.dynmap.hdmap.HDMap
+        name: surface2
+        title: "Surface North East"
+        prefix: tNE
+        perspective: iso_NE_30_hires
+        shader: stdtexture
+        lighting: shadows
+        mapzoomin: 8
+        boostzoom: 4
+        image-format: jpg-q100
+        chunkyThreads: 1
+        samplesPerPixel: 20
+        denoiser:
+          enabled: true
+          albedoSamplesPerPixel: 4
+          normalSamplesPerPixel: 4
+      - class: org.dynmap.hdmap.HDMap
+        name: surface
+        title: "Surface South East"
+        prefix: t
+        perspective: iso_SE_30_hires
+        shader: stdtexture
+        lighting: shadows
+        mapzoomin: 8
+        boostzoom: 4
+        image-format: jpg-q100
+        chunkyThreads: 1
+        samplesPerPixel: 20
+        denoiser:
+          enabled: true
+          albedoSamplesPerPixel: 4
+          normalSamplesPerPixel: 4
+  nether-dpsi:
+    enabled: true
+    # Number of extra zoom-out levels for world (each level is twice as big as the previous one)
+    extrazoomout: 4
+    maps:
+      - class: org.dynmap.hdmap.HDMap
+        name: flat
+        title: "Underview"
+        prefix: flat
+        perspective: iso_S_90_hires
+        shader: stdtexture
+        lighting: nethershadows
+        # Map background color (day or night)
+        background: "#300806"
+        mapzoomin: 8
+        image-format: png
+      - class: org.dynmap.hdmap.HDMap
+        name: nether
+        title: "Surface South East"
+        prefix: nt
+        perspective: iso_SE_30_hires
+        shader: stdtexture
+        lighting: nethershadows
+        # Map background color (day or night)
+        background: "#300806"
+        mapzoomin: 8
+        boostzoom: 4
+        image-format: jpg-q100
+      - class: org.dynmap.hdmap.HDMap
+        name: nether
+        title: "Surface North-West"
+        prefix: ntNW
+        perspective: iso_NW_30_hires
+        shader: stdtexture
+        lighting: nethershadows
+        # Map background color (day or night)
+        background: "#300806"
+        mapzoomin: 8
+        boostzoom: 4
+        image-format: jpg-q100
+      - class: org.dynmap.hdmap.HDMap
+        name: nether
+        title: "Surface South West"
+        prefix: ntSW
+        perspective: iso_SW_30_hires
+        shader: stdtexture
+        lighting: nethershadows
+        # Map background color (day or night)
+        background: "#300806"
+        mapzoomin: 8
+        boostzoom: 4
+        image-format: jpg-q100
+      - class: org.dynmap.hdmap.HDMap
+        name: nether
+        title: "Surface North East"
+        prefix: ntNE
+        perspective: iso_NE_30_hires
+        shader: stdtexture
+        lighting: nethershadows
+        # Map background color (day or night)
+        background: "#300806"
+        mapzoomin: 8
+        boostzoom: 4
+        image-format: jpg-q100
+      - class: org.dynmap.hdmap.HDMap
+        name: netherroof
+        title: "Roof"
+        prefix: ntroof
+        perspective: nether_roof
+        shader: stdtexture
+        lighting: default
+        # Map background color (day or night)
+        background: "#300806"
+        mapzoomin: 8
+        boostzoom: 4
+        image-format: jpg-q100
+  the_end-dpsi:
+    enabled: true
+    # Number of extra zoom-out levels for world (each level is twice as big as the previous one)
+    extrazoomout: 4
+    maps:
+      - class: org.dynmap.hdmap.HDMap
+        name: flat
+        title: "Enderview"
+        prefix: flat
+        perspective: iso_S_90_hires
+        shader: stdtexture
+        lighting: brightnight
+        mapzoomin: 8
+        image-format: png
+      - class: org.dynmap.hdmap.HDMap
+        name: the_end
+        title: "Surface"
+        prefix: st
+        perspective: iso_SE_30_hires
+        shader: stdtexture
+        lighting: brightnight
+        mapzoomin: 8
+        boostzoom: 4
+        image-format: jpg-q100

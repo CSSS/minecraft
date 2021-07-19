@@ -88,7 +88,7 @@ MultiBungee:
 # [!] IF YOU USE BUNGEE, DO NOT ENABLE MYSQL in the Spigot / backend config.yml [!]
 # [!] Non-root users: MySQL 8's new default authentication is not supported, use mysql_native_password [!]
 MySQL:
-  Enabled: true
+  Enabled: false
   Host: multicraft.dpsi.jp
   Port: 3306
   Database: multidb2
@@ -103,7 +103,7 @@ NoSkinIfLoginCanceled: true
 
 # When enabled, Only websites from the list below is allowed to be set using /skin url <url>
 RestrictSkinUrls:
-  Enabled: false
+  Enabled: true
   List:
   - https://i.imgur.com
   - http://i.imgur.com

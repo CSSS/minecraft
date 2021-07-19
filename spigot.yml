@@ -14,7 +14,7 @@ config-version: 12
 settings:
   save-user-cache-on-stop-only: false
   sample-count: 12
-  bungeecord: false
+  bungeecord: true
   player-shuffle: 0
   user-cache-size: 1000
   moved-wrongly-threshold: 0.0625
@@ -83,7 +83,7 @@ world-settings:
     seed-ocean: 14357621
     seed-outpost: 165745296
     seed-slime: 987234911
-    max-tnt-per-tick: 100
+    max-tnt-per-tick: 1024
     view-distance: default
     enable-zombie-pigmen-portal-spawns: true
     item-despawn-rate: 6000

@@ -5,8 +5,10 @@ permissions:
 - simpleclans.anyone.*
 - simpleclans.leader.*
 - simpleclans.member.*
+- bukkit.command.mspt
 - bukkit.command.plugins:
     value: false
+- bukkit.command.tps
 - core.chat.color
 - core.cmd.afk
 - core.cmd.chairs
@@ -100,6 +102,13 @@ permissions:
 - essentials.worlds.world_nether
 - essentials.worlds.world_the_end
 - isslimechunk.command.use
+- minecraft.command.locate
+- minecraft.command.locatebiome
+- minecraft.command.minecraft:locate
+- minecraft.command.minecraft:locatebiome
+- minecraft.command.minecraft:seed
+- minecraft.command.seed
+- minecraft.debugstick.always
 - multiverse.core.list
 - parties.user.accept
 - parties.user.chat
@@ -121,6 +130,7 @@ permissions:
 - us.percent
 - village.create:
     value: false
+- warpsystem.use.portals
 - wild.wildtp
 - wild.wildtp.direction
 - wild.wildtp.sign
